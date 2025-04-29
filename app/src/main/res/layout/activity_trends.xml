@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAF7E9"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:indeterminate="true"
+            android:theme="@style/Widget.AppCompat.ProgressBar"
+            android:layout_marginTop="20dp"/>
+
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trends in Agriculture"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#134E4A"
+            android:paddingBottom="16dp" />
+
+        <!-- Graph Placeholder -->
+        <ImageView
+            android:id="@+id/imgGraph"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/ic_trendgraph"
+            android:scaleType="fitCenter"
+            android:contentDescription="Graph Trends"
+            android:background="#D1FAE5"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Latest Technology Header -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Latest Technologies"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#14532D"
+            android:paddingBottom="8dp" />
+
+        <!-- Tech Items -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_dronetech"
+                android:contentDescription="Drones" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Smart Drones for Crop Monitoring"
+                android:textSize="17sp"
+                android:layout_marginStart="12dp"
+                android:textColor="#064E3B" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_land_holding"
+                android:contentDescription="IoT Farming" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IoT-based Smart Irrigation Systems"
+                android:textSize="17sp"
+                android:layout_marginStart="12dp"
+                android:textColor="#064E3B" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_trendgraph"
+                android:contentDescription="AI in Agriculture" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AI-driven Crop Prediction Models"
+                android:textSize="17sp"
+                android:layout_marginStart="12dp"
+                android:textColor="#064E3B" />
+        </LinearLayout>
+
+        <!-- Optional: Tip Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\uD83D\uDCAC Tip: Using satellite imagery can improve yield forecasts!"
+            android:textSize="15sp"
+            android:textColor="#065F46"
+            android:padding="12dp"
+            android:background="#D1FAE5"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Back Button -->
+        <Button
+            android:id="@+id/btnBackToDashboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Back to Dashboard"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#134E4A"
+            />
+    </LinearLayout>
+</ScrollView>
